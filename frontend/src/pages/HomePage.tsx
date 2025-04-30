@@ -1,4 +1,6 @@
-import { Box, Container, Typography} from "@mui/material";
+import {Box, Button, Container, Typography} from "@mui/material";
+import { Link } from "react-router-dom";
+
 
 const HomePage = () => {
     return (
@@ -14,8 +16,8 @@ const HomePage = () => {
                 <Typography>
                     E-Card
                 </Typography>
-                <button className="button">スタート</button>
-                <button className="button">ログイン</button>
+                <Button className="button" component={Link} to="/room">スタート</Button>
+                <Button className="button" component={Link} to="/login">ログイン</Button>
             </Box>
         </Container>
     )
